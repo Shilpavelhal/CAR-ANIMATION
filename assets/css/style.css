@@ -1,0 +1,74 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+.container{
+	height:65vh;
+	background-image:url("../images/hill-img.jpeg");
+	background-position:center;
+	background-size:cover;
+	/* background-repeat:no-repeat; */
+	background-attachment:fixed;
+	animation:tree-move 10s linear infinite;
+}
+.container-tree{
+	height:40vh;
+	margin-top:-40vh;
+	background-image:url("../images/bc-img.png");
+	background-position:center;
+	background-size:cover;
+	/* background-repeat:no-repeat;	 */
+	background-attachment:fixed;
+	animation:tree-move 10s linear infinite;
+}
+.container-tree1{
+	height:55vh;
+	margin-top:-35vh;
+	background-image:url("../images/gr-tree.png");
+	background-position:center;
+	background-size:cover;
+	background-attachment:fixed;
+	/* background-repeat:no-repeat; */
+	animation:tree-move 10s linear infinite;
+}
+
+.box{
+	height: 200px;
+	width: 200px;
+	animation : car-ani 10s linear infinite;
+}
+.container-car{
+	position:absolute;
+	top:70vh;
+	width:100%
+}
+.road{
+	height:80px;
+	background-image:url('../images/road-img.png');
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	/* background-attachment:fixed; */
+	animation:tree-move 10s linear infinite;
+}
+@keyframes car-ani{
+	0%{
+		margin-left:0;
+	}
+	100%{
+		margin-top: 0;
+		margin-left: calc(100% - 200px);
+	}
+}
+@keyframes tree-move{
+	0%{
+		background-position:0;
+	}
+	100%{
+		background-position:100%;
+	}
+}
+
+
+
